@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {Text , View , StyleSheet , SafeAreaView , Platform , StatusBar} from 'react-native';
 import { colors } from './src/utils/Color';
+import { Focus } from './src/feature/Focus';
 
 export default function App() {
      return(
       <SafeAreaView style={styles.container}>
-        <Text style={styles.text}>Hello World!</Text>
+        <Focus/>
       </SafeAreaView>
      );
 }
@@ -15,8 +16,5 @@ const styles = StyleSheet.create({
       flex : 1,
       paddingTop : Platform.OS === 'android' ? StatusBar.currentHeight : 0, 
       backgroundColor:  colors.blue
-     },
-     text : {
-          color : colors.white
      }
 });
