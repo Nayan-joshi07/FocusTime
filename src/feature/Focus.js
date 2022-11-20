@@ -1,18 +1,28 @@
 import React from "react";
-import { View , Text , StyleSheet } from "react-native";
+import { View , StyleSheet} from "react-native";
+import { TextInput } from "react-native-paper";
 import { colors } from "../utils/Color";
 
-export const Focus = () => (
-    <View style={styles.container}>
- <Text style={styles.text}>Focus Feature</Text>
+export const Focus = () => {
+    return(
+    <View style = {styles.container}>
+      <View style = {styles.inputContainer}>
+      <TextInput label = "What you would like to focus on?"/>
+      </View>
     </View>
-)
+);
+}
 
 const styles = StyleSheet.create({
-    container :{
+   container :{
        flex : 1
-    },
-     text : {
+   },
+   inputContainer:{
+        flex:1,
+        padding:25,
+        justifyContent:'top',
+   },
+   text : {
         color : colors.white
-     }
+   }
 });
