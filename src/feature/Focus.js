@@ -6,7 +6,6 @@ import { RoundedButton } from "../component/RoundedButton";
 
 export const Focus = ({ addSubject }) => {
   const [subject, setSubject] = useState(null);
-  console.log("1" + subject);
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
